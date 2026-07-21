@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration</title>
+</head>
+<body style="background-color:rgb(92, 65, 190)">
+    <h1 style="text-align: center;">Registration Form</h1>   
+<h2 style="text-align: center;">
+<style>
+font{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+</style>
+<form>
+    
+    <form action="/action_page.php">
+        <header>
+            <h2>Registration</h2>
+          </header
+        <label for="fname">NAME:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Username:</label><br>
+        <input type="text" id="lname" name="lname"><br>
+        <label for="\nfname">phone no:</label><br>
+        <input type="teld="tel" name="tel"><br>
+        <label for="lname">Email Address:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <form action="/action_page.php" target="_blank"></form>
+        <div>
+            <label for="password">password</label><br>
+            <input type="password" id="password" name="password">
+        </div>
+        </div>
+        <div>
+            <label for="confirm-password">confirm-password</label><br>
+            <input type="password" id="confirm-password" name="confirm-password">
+        </div>
+        </table>
+        <script>
+        const form = document.getElementById("registerForm");
+        form.addEventListener("submit", function(event){
+        const passwordInput = document.getElementById("password").value;
+        const confirmPasswordInput = document.getElementById("confirm-password").value;
+
+        if(passwordInput !== confirmPasswordInput){
+        alert("Password and Confirm Password do not match!");
+        event.preventDefault();
+    }
+});
+</script>
+<input type="submit" value="Submit">
+        <footer>
+            <p>hyderabad,telangana</p>
+          </footer>
+      </form>
+    </form>
+</h2>
+</body>
+</html>
